@@ -2,9 +2,9 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-AUTHOR = u'srcc members'
-SITENAME = u'SRCC blog'
-SITEURL = u'srccblog.lsu.edu/'
+AUTHOR = 'srcc members'
+SITENAME = 'SRCC blog'
+SITEURL = 'http://localhost:8000'
 
 PATH = 'content'
 
@@ -70,3 +70,8 @@ NEWEST_FIRST_ARCHIVES = False
 # Specify theme
 
 THEME = "bootstrap2"
+
+DISQUS_SITENAME = 'blog.srcc.lsu.edu'
+
+HEADER_COVER = 'images/srcclogo.png'
+MENUITEMS = [['Posts', SITEURL]]

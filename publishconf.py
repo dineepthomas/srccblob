@@ -9,6 +9,7 @@ import os
 import sys
 sys.path.append(os.curdir)
 from pelicanconf import *
+import pelicanconf
 
 SITEURL = 'http://blog.srcc.lsu.edu'
 RELATIVE_URLS = False
@@ -20,5 +21,6 @@ DELETE_OUTPUT_DIRECTORY = True
 
 # Following items are often useful when publishing
 
-#DISQUS_SITENAME = ""
+DISQUS_SITENAME = 'blog.srcc.lsu.edu'
 #GOOGLE_ANALYTICS = ""
+[item for item in MENUITEMS if item[1] == pelicanconf.SITEURL][0][1] = SITEURL
